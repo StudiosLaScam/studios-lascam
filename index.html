@@ -53,39 +53,35 @@
       display: flex;
       justify-content: center;
 
-      margin-bottom: 36px;
+      margin-bottom: 42px;
     }
 
-    .hero-title {
+.hero-title {
 
-      font-size: 1rem;
+  font-size: 1.55rem;
 
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
+  letter-spacing: 0.01em;
 
-      color: white;
+  text-transform: none;
 
-      font-weight: 700;
+  color: white;
 
-      background: #C32B49;
+  font-weight: 700;
 
-      backdrop-filter: blur(14px);
+  background: #C32B49;
 
-      border:
-        1px solid rgba(255,255,255,0.15);
+  border-radius: 999px;
 
-      border-radius: 999px;
+  padding: 18px 34px;
 
-      padding: 16px 28px;
+  box-shadow:
+    0 12px 30px rgba(195,43,73,0.28),
+    0 2px 8px rgba(0,0,0,0.08);
 
-      box-shadow:
-        0 12px 30px rgba(195,43,73,0.28),
-        0 2px 8px rgba(0,0,0,0.08);
+  position: relative;
 
-      position: relative;
-
-      overflow: hidden;
-    }
+  overflow: hidden;
+}
 
     .hero-title::before {
 
@@ -112,7 +108,7 @@
       grid-template-columns:
         repeat(2, minmax(0, 1fr));
 
-      gap: 32px;
+      gap: 36px;
 
       align-items: start;
     }
@@ -120,16 +116,16 @@
     .card {
 
       background:
-        rgba(255,255,255,0.82);
+        rgba(255,255,255,0.84);
 
       backdrop-filter: blur(14px);
 
-      border-radius: 28px;
+      border-radius: 32px;
 
       overflow: hidden;
 
       border:
-        1px solid rgba(255,255,255,0.8);
+        1px solid rgba(255,255,255,0.9);
 
       box-shadow:
         0 10px 40px rgba(0,0,0,0.05),
@@ -142,16 +138,21 @@
 
     .card:hover {
 
-      transform: translateY(-3px);
+      transform: translateY(-4px);
 
       box-shadow:
-        0 14px 48px rgba(0,0,0,0.08),
+        0 16px 48px rgba(0,0,0,0.08),
         0 4px 12px rgba(0,0,0,0.04);
     }
 
     .card-header {
 
-      padding: 22px 24px;
+      padding:
+        26px 24px 22px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .card-image {
@@ -175,30 +176,45 @@
       display: inline-flex;
 
       align-items: center;
-      gap: 8px;
+      justify-content: center;
 
-      padding: 8px 14px;
+      gap: 10px;
+
+      padding: 14px 22px;
 
       border-radius: 999px;
 
-      font-size: 0.85rem;
-      font-weight: 600;
+      font-size: 1rem;
+      font-weight: 700;
+
+      letter-spacing: 0.03em;
+
+      min-width: 240px;
+
+      box-shadow:
+        0 4px 14px rgba(0,0,0,0.04);
     }
 
     .label-image {
 
       background:
-        rgba(46,139,87,0.12);
+        rgba(46,139,87,0.14);
 
       color: var(--image);
+
+      border:
+        1px solid rgba(46,139,87,0.12);
     }
 
     .label-sound {
 
       background:
-        rgba(230,126,34,0.12);
+        rgba(230,126,34,0.14);
 
       color: var(--sound);
+
+      border:
+        1px solid rgba(230,126,34,0.12);
     }
 
     iframe {
@@ -247,7 +263,7 @@
         <div class="card-header card-image">
 
           <div class="label label-image">
-            ● Studio Image
+            ● Studio image
           </div>
 
         </div>
@@ -264,7 +280,7 @@
         <div class="card-header card-sound">
 
           <div class="label label-sound">
-            ● Studio Son
+            ● Studio son
           </div>
 
         </div>
