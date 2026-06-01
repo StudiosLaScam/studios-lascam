@@ -16,6 +16,35 @@ CALENDARS = {
 }
 
 # =========================
+# TRADUCTIONS FR
+# =========================
+
+MOIS = {
+    "January": "Janvier",
+    "February": "Février",
+    "March": "Mars",
+    "April": "Avril",
+    "May": "Mai",
+    "June": "Juin",
+    "July": "Juillet",
+    "August": "Août",
+    "September": "Septembre",
+    "October": "Octobre",
+    "November": "Novembre",
+    "December": "Décembre"
+}
+
+JOURS = {
+    "Monday": "Lundi",
+    "Tuesday": "Mardi",
+    "Wednesday": "Mercredi",
+    "Thursday": "Jeudi",
+    "Friday": "Vendredi",
+    "Saturday": "Samedi",
+    "Sunday": "Dimanche"
+}
+
+# =========================
 # PERIODE
 # =========================
 
@@ -98,40 +127,16 @@ for studio_name, url in CALENDARS.items():
             continue
 
         month_key = start.strftime("%Y-%m")
-        mois = {
-    "January": "Janvier",
-    "February": "Février",
-    "March": "Mars",
-    "April": "Avril",
-    "May": "Mai",
-    "June": "Juin",
-    "July": "Juillet",
-    "August": "Août",
-    "September": "Septembre",
-    "October": "Octobre",
-    "November": "Novembre",
-    "December": "Décembre"
-}
 
 month_name = (
-    f"{mois[start.strftime('%B')]} "
+    f"{MOIS[start.strftime('%B')]} "
     f"{start.strftime('%Y')}"
 )
 
         date_key = start.strftime("%Y-%m-%d")
 
-        jours = {
-    "Monday": "Lundi",
-    "Tuesday": "Mardi",
-    "Wednesday": "Mercredi",
-    "Thursday": "Jeudi",
-    "Friday": "Vendredi",
-    "Saturday": "Samedi",
-    "Sunday": "Dimanche"
-}
-
 pretty_date = (
-    f"{jours[start.strftime('%A')]} "
+    f"{JOURS[start.strftime('%A')]} "
     f"{start.strftime('%d/%m')}"
 )
 
