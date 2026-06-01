@@ -175,131 +175,17 @@ for studio_name, url in CALENDARS.items():
             months_data[month_key]["dates"][date_key][studio_name] = slot
 
 # =========================
-# GENERATION HTML
+# EXPORT JSON
 # =========================
 
-last_update = datetime.now().strftime("%d/%m/%Y à %H:%M")
+import json
 
-html = f"""
+with open("disponibilites.json", "w", encoding="utf-8") as f:
+    json.dump(
+        months_data,
+        f,
+        ensure_ascii=False,
+        indent=2
+    )
 
-<div style="
-font-family: Arial, sans-serif;
-">
-
-<h1 style="
-color:#C32B49;
-margin-bottom:8px;
-">
-Disponibilités des studios LaScam
-</h1>
-
-<p style="
-color:#777;
-font-size:13px;
-margin-top:0;
-margin-bottom:40px;
-">
-Dernière mise à jour : {last_update}
-</p>
-
-"""
-
-for month_key in sorted(months_data.keys()):
-
-    month = months_data[month_key]
-
-    html += f"""
-
-    <h2 style="
-    color:#C32B49;
-    margin-top:40px;
-    margin-bottom:18px;
-    ">
-    {month['name']}
-    </h2>
-
-    <table style="
-    border-collapse: collapse;
-    font-size: 14px;
-    min-width: 700px;
-    margin-bottom: 40px;
-    ">
-
-    <tr>
-
-    <th style="
-    border:1px solid #ddd;
-    padding:10px;
-    background:#f3f3f3;
-    text-align:left;
-    ">
-    Date
-    </th>
-
-    <th style="
-    border:1px solid #ddd;
-    padding:10px;
-    background:#eef8f1;
-    color:#2e8b57;
-    text-align:left;
-    ">
-    Studio image
-    </th>
-
-    <th style="
-    border:1px solid #ddd;
-    padding:10px;
-    background:#fff4ea;
-    color:#e67e22;
-    text-align:left;
-    ">
-    Studio son
-    </th>
-
-    </tr>
-    """
-
-    for date_key in sorted(month["dates"].keys()):
-
-        row = month["dates"][date_key]
-
-        html += f"""
-
-        <tr>
-
-        <td style="
-        border:1px solid #ddd;
-        padding:10px;
-        ">
-        {row['pretty']}
-        </td>
-
-        <td style="
-        border:1px solid #ddd;
-        padding:10px;
-        ">
-        {row['Studio image']}
-        </td>
-
-        <td style="
-        border:1px solid #ddd;
-        padding:10px;
-        ">
-        {row['Studio son']}
-        </td>
-
-        </tr>
-        """
-
-    html += "</table>"
-
-html += "</div>"
-
-# =========================
-# EXPORT HTML
-# =========================
-
-with open("index.html", "w", encoding="utf-8") as f:
-    f.write(html)
-
-print("index.html généré")
+print("disponibilites.json généré")
