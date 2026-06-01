@@ -1,13 +1,6 @@
 from ics import Calendar
 from datetime import datetime, timedelta
 import requests
-import locale
-
-# =========================
-# FRANÇAIS
-# =========================
-
-locale.setlocale(locale.LC_TIME, "fr_FR.UTF-8")
 
 # =========================
 # CONFIGURATION
@@ -105,14 +98,42 @@ for studio_name, url in CALENDARS.items():
             continue
 
         month_key = start.strftime("%Y-%m")
-        month_name = start.strftime("%B %Y").capitalize()
+        mois = {
+    "January": "Janvier",
+    "February": "Février",
+    "March": "Mars",
+    "April": "Avril",
+    "May": "Mai",
+    "June": "Juin",
+    "July": "Juillet",
+    "August": "Août",
+    "September": "Septembre",
+    "October": "Octobre",
+    "November": "Novembre",
+    "December": "Décembre"
+}
+
+month_name = (
+    f"{mois[start.strftime('%B')]} "
+    f"{start.strftime('%Y')}"
+)
 
         date_key = start.strftime("%Y-%m-%d")
 
-        pretty_date = (
-            start.strftime("%A %d/%m")
-            .capitalize()
-        )
+        jours = {
+    "Monday": "Lundi",
+    "Tuesday": "Mardi",
+    "Wednesday": "Mercredi",
+    "Thursday": "Jeudi",
+    "Friday": "Vendredi",
+    "Saturday": "Samedi",
+    "Sunday": "Dimanche"
+}
+
+pretty_date = (
+    f"{jours[start.strftime('%A')]} "
+    f"{start.strftime('%d/%m')}"
+)
 
         if month_key not in months_data:
 
