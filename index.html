@@ -10,8 +10,8 @@
 
 body{
     font-family: Arial, sans-serif;
-    max-width: 1200px;
-    margin: 40px auto;
+    max-width: 1800px;
+    margin: 30px auto;
     padding: 20px;
     color:#222;
 }
@@ -19,11 +19,6 @@ body{
 h1{
     color:#C32B49;
     margin-bottom:10px;
-}
-
-h2{
-    color:#C32B49;
-    margin-top:40px;
 }
 
 #update{
@@ -39,37 +34,69 @@ button{
     padding:10px 16px;
     border-radius:8px;
     cursor:pointer;
-    margin-bottom:20px;
+    margin-bottom:30px;
 }
 
-button:hover{
-    opacity:0.9;
+.months-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap:24px;
+    align-items:start;
+}
+
+.month-card{
+    background:white;
+    border:1px solid #e5e5e5;
+    border-radius:16px;
+    padding:16px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.04);
+}
+
+.month-card h2{
+    color:#C32B49;
+    margin-top:0;
+    margin-bottom:12px;
+    font-size:20px;
 }
 
 table{
-    border-collapse:collapse;
     width:100%;
-    margin-bottom:40px;
+    border-collapse:collapse;
+    font-size:13px;
 }
 
 th, td{
-    border:1px solid #ddd;
-    padding:10px;
+    border-bottom:1px solid #eee;
+    padding:6px 8px;
     text-align:left;
 }
 
 th{
-    background:#f7f7f7;
+    background:#fafafa;
+    position:sticky;
+    top:0;
 }
 
 .image{
     color:#2e8b57;
-    font-weight:bold;
+    font-weight:600;
+    width:90px;
+    white-space:nowrap;
 }
 
 .son{
     color:#e67e22;
-    font-weight:bold;
+    font-weight:600;
+    width:90px;
+    white-space:nowrap;
+}
+
+@media (max-width: 1000px){
+
+    .months-grid{
+        grid-template-columns:1fr;
+    }
+
 }
 
 </style>
@@ -79,10 +106,6 @@ th{
 <h1>Disponibilités des studios LaScam</h1>
 
 <div id="update"></div>
-
-<button onclick="loadData()">
-🔄 Actualiser
-</button>
 
 <div id="content"></div>
 
@@ -102,44 +125,50 @@ async function loadData() {
         "Dernier chargement : " +
         new Date().toLocaleString("fr-FR");
 
-    let html = "";
+let html = '<div class="months-grid">';
 
-    Object.keys(data)
-        .sort()
-        .forEach(monthKey => {
+Object.keys(data)
+    .sort()
+    .forEach(monthKey => {
 
-            const month = data[monthKey];
+        const month = data[monthKey];
 
-            html += `
-                <h2>${month.name}</h2>
+        html += `
+            <div class="month-card">
 
-                <table>
+            <h2>${month.name}</h2>
 
-                <tr>
-                    <th>Date</th>
-                    <th class="image">Studio image</th>
-                    <th class="son">Studio son</th>
-                </tr>
-            `;
+            <table>
 
-            Object.keys(month.dates)
-                .sort()
-                .forEach(dateKey => {
+            <tr>
+                <th>Date</th>
+                <th class="image">Image</th>
+                <th class="son">Son</th>
+            </tr>
+        `;
 
-                    const row =
-                        month.dates[dateKey];
+        Object.keys(month.dates)
+            .sort()
+            .forEach(dateKey => {
 
-                    html += `
-                        <tr>
-                            <td>${row.pretty}</td>
-                            <td>${row["Studio image"]}</td>
-                            <td>${row["Studio son"]}</td>
-                        </tr>
-                    `;
-                });
+                const row = month.dates[dateKey];
 
-            html += "</table>";
-        });
+                html += `
+                    <tr>
+                        <td>${row.pretty}</td>
+                        <td>${row["Studio image"]}</td>
+                        <td>${row["Studio son"]}</td>
+                    </tr>
+                `;
+            });
+
+        html += `
+            </table>
+            </div>
+        `;
+    });
+
+html += '</div>';
 
     document.getElementById("content").innerHTML =
         html;
