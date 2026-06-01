@@ -1,299 +1,1031 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Créneaux disponibles — Studios LaScam</title>
 
-  <link rel="icon" type="image/png" href="favicon.png">
-
-  <style>
-    :root {
-
-      --bg: #f6f6f4;
-      --text: #1f1f1f;
-
-      --lascam: #C32B49;
-
-      --image: #2e8b57;
-      --image-light: #eef8f1;
-
-      --sound: #e67e22;
-      --sound-light: #fff4ea;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-
-      margin: 0;
-      padding: 36px 18px;
-
-      background:
-        radial-gradient(circle at top left, rgba(46,139,87,0.08), transparent 30%),
-        radial-gradient(circle at top right, rgba(230,126,34,0.08), transparent 30%),
-        radial-gradient(circle at center top, rgba(195,43,73,0.08), transparent 40%),
-        var(--bg);
-
-      font-family: Inter, Arial, Helvetica, sans-serif;
-
-      color: var(--text);
-
-      min-height: 100vh;
-    }
-
-    .container {
-      max-width: 1500px;
-      margin: 0 auto;
-    }
-
-    .hero {
-
-      display: flex;
-      justify-content: center;
-
-      margin-bottom: 42px;
-    }
-
-.hero-title {
-
-  font-size: 1.55rem;
-
-  letter-spacing: 0.01em;
-
-  text-transform: none;
-
-  color: white;
-
-  font-weight: 700;
-
-  background: #C32B49;
-
-  border-radius: 999px;
-
-  padding: 18px 34px;
-
-  box-shadow:
-    0 12px 30px rgba(195,43,73,0.28),
-    0 2px 8px rgba(0,0,0,0.08);
-
-  position: relative;
-
-  overflow: hidden;
-}
-
-    .hero-title::before {
-
-      content: "";
-
-      position: absolute;
-
-      inset: 0;
-
-      background:
-        linear-gradient(
-          135deg,
-          rgba(255,255,255,0.14),
-          transparent 55%
-        );
-
-      pointer-events: none;
-    }
-
-    .grid {
-
-      display: grid;
-
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
-      gap: 36px;
-
-      align-items: start;
-    }
-
-    .card {
-
-      background:
-        rgba(255,255,255,0.84);
-
-      backdrop-filter: blur(14px);
-
-      border-radius: 32px;
-
-      overflow: hidden;
-
-      border:
-        1px solid rgba(255,255,255,0.9);
-
-      box-shadow:
-        0 10px 40px rgba(0,0,0,0.05),
-        0 2px 8px rgba(0,0,0,0.03);
-
-      transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-    }
-
-.card:hover {
-
-  box-shadow:
-    0 10px 40px rgba(0,0,0,0.05),
-    0 2px 8px rgba(0,0,0,0.03);
-    }
-
-    .card-header {
-
-      padding:
-        26px 24px 22px;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .card-image {
-
-      background: var(--image-light);
-
-      border-bottom:
-        1px solid rgba(46,139,87,0.12);
-    }
-
-    .card-sound {
-
-      background: var(--sound-light);
-
-      border-bottom:
-        1px solid rgba(230,126,34,0.12);
-    }
-
-    .label {
-
-      display: inline-flex;
-
-      align-items: center;
-      justify-content: center;
-
-      gap: 10px;
-
-      padding: 14px 22px;
-
-      border-radius: 999px;
-
-      font-size: 1rem;
-      font-weight: 700;
-
-      letter-spacing: 0.03em;
-
-      min-width: 240px;
-
-      box-shadow:
-        0 4px 14px rgba(0,0,0,0.04);
-    }
-
-    .label-image {
-
-      background:
-        rgba(46,139,87,0.14);
-
-      color: var(--image);
-
-      border:
-        1px solid rgba(46,139,87,0.12);
-    }
-
-    .label-sound {
-
-      background:
-        rgba(230,126,34,0.14);
-
-      color: var(--sound);
-
-      border:
-        1px solid rgba(230,126,34,0.12);
-    }
-
-    iframe {
-
-      width: 100%;
-
-      height: 82vh;
-
-      min-height: 780px;
-
-      border: none;
-
-      background: white;
-    }
-
-    @media (max-width: 1000px) {
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      iframe {
-        min-height: 680px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="container">
-
-    <div class="hero">
-
-      <div class="hero-title">
-        Créneaux disponibles — Studios LaScam
-      </div>
-
-    </div>
-
-    <div class="grid">
-
-      <!-- STUDIO IMAGE -->
-      <div class="card">
-
-        <div class="card-header card-image">
-
-          <div class="label label-image">
-            ● Studio image
-          </div>
-
-        </div>
-
-        <iframe
-          src="https://outlook.office365.com/owa/calendar/6714a0f86ead44b280f0f20fbec7c7e8@lascam.fr/f79c90a8ed194c32a17994039be42f251899749353559877707/calendar.html">
-        </iframe>
-
-      </div>
-
-      <!-- STUDIO SON -->
-      <div class="card">
-
-        <div class="card-header card-sound">
-
-          <div class="label label-sound">
-            ● Studio son
-          </div>
-
-        </div>
-
-        <iframe
-          src="https://outlook.office365.com/owa/calendar/6714a0f86ead44b280f0f20fbec7c7e8@lascam.fr/a706e01e72734e548f7b6c7280ff356415769568704837581163/calendar.html">
-        </iframe>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</body>
-</html>
+<div style="
+font-family: Arial, sans-serif;
+">
+
+<h1 style="
+color:#C32B49;
+margin-bottom:8px;
+">
+Disponibilités des studios LaScam
+</h1>
+
+<p style="
+color:#777;
+font-size:13px;
+margin-top:0;
+margin-bottom:40px;
+">
+Dernière mise à jour : 01/06/2026 à 10:53
+</p>
+
+
+
+    <h2 style="
+    color:#C32B49;
+    margin-top:40px;
+    margin-bottom:18px;
+    ">
+    Juin 2026
+    </h2>
+
+    <table style="
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 700px;
+    margin-bottom: 40px;
+    ">
+
+    <tr>
+
+    <th style="
+    border:1px solid #ddd;
+    padding:10px;
+    background:#f3f3f3;
+    text-align:left;
+    ">
+    Date
+    </th>
+
+    <th style="
+    border:1px solid #ddd;
+    padding:10px;
+    background:#eef8f1;
+    color:#2e8b57;
+    text-align:left;
+    ">
+    Studio image
+    </th>
+
+    <th style="
+    border:1px solid #ddd;
+    padding:10px;
+    background:#fff4ea;
+    color:#e67e22;
+    text-align:left;
+    ">
+    Studio son
+    </th>
+
+    </tr>
+    
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Lundi 01/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mardi 02/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mercredi 03/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Lundi 08/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mardi 09/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mercredi 10/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Jeudi 11/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Vendredi 12/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Lundi 15/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mardi 16/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mercredi 17/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Jeudi 18/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Vendredi 19/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Lundi 22/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mardi 23/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mercredi 24/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Jeudi 25/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Vendredi 26/06
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        </table>
+
+    <h2 style="
+    color:#C32B49;
+    margin-top:40px;
+    margin-bottom:18px;
+    ">
+    Juillet 2026
+    </h2>
+
+    <table style="
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 700px;
+    margin-bottom: 40px;
+    ">
+
+    <tr>
+
+    <th style="
+    border:1px solid #ddd;
+    padding:10px;
+    background:#f3f3f3;
+    text-align:left;
+    ">
+    Date
+    </th>
+
+    <th style="
+    border:1px solid #ddd;
+    padding:10px;
+    background:#eef8f1;
+    color:#2e8b57;
+    text-align:left;
+    ">
+    Studio image
+    </th>
+
+    <th style="
+    border:1px solid #ddd;
+    padding:10px;
+    background:#fff4ea;
+    color:#e67e22;
+    text-align:left;
+    ">
+    Studio son
+    </th>
+
+    </tr>
+    
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mercredi 01/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Jeudi 02/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Après-midi
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Vendredi 03/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        —
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mercredi 08/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Jeudi 09/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Vendredi 10/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mercredi 15/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Jeudi 16/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Après-midi
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Vendredi 17/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Lundi 20/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mardi 21/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mercredi 22/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Jeudi 23/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Vendredi 24/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Lundi 27/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mardi 28/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        
+
+        <tr>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Mercredi 29/07
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        <td style="
+        border:1px solid #ddd;
+        padding:10px;
+        ">
+        Matin + Après-midi
+        </td>
+
+        </tr>
+        </table></div>
