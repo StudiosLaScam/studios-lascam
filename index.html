@@ -154,8 +154,14 @@ Object.keys(data)
 
             <h2>${month.name}</h2>
 
-            <button class="copy-btn" onclick='copyMonthHandler(this, "${monthKey}")'>
-Copier
+          <button class="copy-btn"
+onclick='copyMonthHandler(this, "${monthKey}", "Studio image")'>
+Copier image
+</button>
+
+<button class="copy-btn"
+onclick='copyMonthHandler(this, "${monthKey}", "Studio son")'>
+Copier son
 </button>
 
             <table>
@@ -196,7 +202,7 @@ html += '</div>';
 
 loadData();
 
-function monthText(month){
+function monthTextByStudio(month, studioKey){
 
     const jours = {
         Monday: "Lun",
@@ -216,23 +222,21 @@ function monthText(month){
 
             const row = month.dates[dateKey];
 
-            // extraction du jour déjà présent dans row.pretty (ex: "Mercredi 01/07")
+            const value = row[studioKey];
+
+            if (!value || value === "—") return;
+
             const parts = row.pretty.split(" ");
-            const date = parts[1]; // "01/07"
+            const dayName = parts[0];
+            const date = parts[1];
 
-            const dayName = parts[0]; // "Mercredi"
+            const shortDay = jours[dayName] || dayName;
 
-            const shortDay = {
-                "Lundi": "Lun",
-                "Mardi": "Mar",
-                "Mercredi": "Mer",
-                "Jeudi": "Jeu",
-                "Vendredi": "Ven",
-                "Samedi": "Sam",
-                "Dimanche": "Dim"
-            }[dayName] || dayName;
-
-            text += `${shortDay} ${date}\n`;
+            if (value === "Matin + Après-midi") {
+                text += `${shortDay} ${date}\n`;
+            } else {
+                text += `${shortDay} ${date} ${value}\n`;
+            }
         });
 
     return text;
@@ -251,13 +255,13 @@ function copyMonth(name, btn, text){
     }, 1200);
 }
 
-function copyMonthHandler(btn, monthKey){
+function copyMonthHandler(btn, monthKey, studioKey){
 
     const month = window.__data[monthKey];
 
-    const text = monthText(month);
+    const text = monthTextByStudio(month, studioKey);
 
-    copyMonth(month.name, btn, text);
+    copyMonth(`${month.name} - ${studioKey}`, btn, text);
 }
 
 </script>
