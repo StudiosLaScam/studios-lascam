@@ -114,6 +114,15 @@ th{
 
 }
 
+    th {
+    text-align: center;
+}
+
+th .copy-btn {
+    display: block;
+    margin: 0 auto 4px auto;
+}
+
 </style>
 </head>
 <body>
@@ -154,23 +163,27 @@ Object.keys(data)
 
             <h2>${month.name}</h2>
 
-          <button class="copy-btn"
-onclick='copyMonthHandler(this, "${monthKey}", "Studio image")'>
-Copier image
-</button>
-
-<button class="copy-btn"
-onclick='copyMonthHandler(this, "${monthKey}", "Studio son")'>
-Copier son
-</button>
-
             <table>
 
-            <tr>
-                <th>Date</th>
-                <th class="image">Image</th>
-                <th class="son">Son</th>
-            </tr>
+        <tr>
+    <th>Date</th>
+
+    <th class="image">
+        <button class="copy-btn"
+            onclick='copyMonthHandler(this, "${monthKey}", "Studio image")'>
+            Copier
+        </button>
+        <div>Image</div>
+    </th>
+
+    <th class="son">
+        <button class="copy-btn"
+            onclick='copyMonthHandler(this, "${monthKey}", "Studio son")'>
+            Copier
+        </button>
+        <div>Son</div>
+    </th>
+</tr>
         `;
 
         Object.keys(month.dates)
