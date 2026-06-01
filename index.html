@@ -92,6 +92,20 @@ th{
     font-weight:600;
 }
 
+    .copy-btn{
+    background:#eee;
+    border:1px solid #ddd;
+    padding:6px 10px;
+    border-radius:8px;
+    font-size:12px;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+
+.copy-btn:hover{
+    background:#ddd;
+}
+
 @media (max-width: 1000px){
 
     .months-grid{
@@ -121,6 +135,7 @@ async function loadData() {
 
     const data =
         await response.json();
+    window.__data = data;
 
     document.getElementById("update").innerHTML =
         "Dernier chargement : " +
@@ -138,6 +153,10 @@ Object.keys(data)
             <div class="month-card">
 
             <h2>${month.name}</h2>
+
+            <button class="copy-btn" onclick='copyMonthHandler(this, "${monthKey}")'>
+Copier
+</button>
 
             <table>
 
@@ -176,6 +195,44 @@ html += '</div>';
 }
 
 loadData();
+
+function monthText(month){
+
+    let text = month.name + "\n\n";
+
+    Object.keys(month.dates)
+        .sort()
+        .forEach(dateKey => {
+
+            const row = month.dates[dateKey];
+
+            text += `${row.pretty} — ${row["Studio image"]} / ${row["Studio son"]}\n`;
+        });
+
+    return text;
+}
+
+function copyMonth(name, btn, text){
+
+    navigator.clipboard.writeText(text).catch(() => {
+        alert("Impossible de copier automatiquement");
+    });
+
+    btn.innerText = "✔ Copié";
+
+    setTimeout(() => {
+        btn.innerText = "Copier";
+    }, 1200);
+}
+
+function copyMonthHandler(btn, monthKey){
+
+    const month = window.__data[monthKey];
+
+    const text = monthText(month);
+
+    copyMonth(month.name, btn, text);
+}
 
 </script>
 
