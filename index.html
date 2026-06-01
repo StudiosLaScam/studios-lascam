@@ -2,11 +2,83 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Disponibilités des studios LaScam</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    color:#222;
+}
+
+h1{
+    color:#C32B49;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#C32B49;
+    margin-top:40px;
+}
+
+#update{
+    color:#777;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+button{
+    background:#C32B49;
+    color:white;
+    border:none;
+    padding:10px 16px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-bottom:20px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+table{
+    border-collapse:collapse;
+    width:100%;
+    margin-bottom:40px;
+}
+
+th, td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:left;
+}
+
+th{
+    background:#f7f7f7;
+}
+
+.image{
+    color:#2e8b57;
+    font-weight:bold;
+}
+
+.son{
+    color:#e67e22;
+    font-weight:bold;
+}
+
+</style>
 </head>
 <body>
 
 <h1>Disponibilités des studios LaScam</h1>
+
+<div id="update"></div>
 
 <button onclick="loadData()">
 🔄 Actualiser
@@ -18,18 +90,59 @@
 
 async function loadData() {
 
-  const response =
-    await fetch(
-      "disponibilites.json?t=" + Date.now()
-    );
+    const response =
+        await fetch(
+            "disponibilites.json?t=" + Date.now()
+        );
 
-  const data =
-    await response.json();
+    const data =
+        await response.json();
 
-  document.getElementById(
-    "content"
-  ).innerHTML =
-    JSON.stringify(data, null, 2);
+    document.getElementById("update").innerHTML =
+        "Dernier chargement : " +
+        new Date().toLocaleString("fr-FR");
+
+    let html = "";
+
+    Object.keys(data)
+        .sort()
+        .forEach(monthKey => {
+
+            const month = data[monthKey];
+
+            html += `
+                <h2>${month.name}</h2>
+
+                <table>
+
+                <tr>
+                    <th>Date</th>
+                    <th class="image">Studio image</th>
+                    <th class="son">Studio son</th>
+                </tr>
+            `;
+
+            Object.keys(month.dates)
+                .sort()
+                .forEach(dateKey => {
+
+                    const row =
+                        month.dates[dateKey];
+
+                    html += `
+                        <tr>
+                            <td>${row.pretty}</td>
+                            <td>${row["Studio image"]}</td>
+                            <td>${row["Studio son"]}</td>
+                        </tr>
+                    `;
+                });
+
+            html += "</table>";
+        });
+
+    document.getElementById("content").innerHTML =
+        html;
 }
 
 loadData();
