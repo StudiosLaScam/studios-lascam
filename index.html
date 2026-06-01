@@ -198,7 +198,17 @@ loadData();
 
 function monthText(month){
 
-    let text = month.name + "\n\n";
+    const jours = {
+        Monday: "Lun",
+        Tuesday: "Mar",
+        Wednesday: "Mer",
+        Thursday: "Jeu",
+        Friday: "Ven",
+        Saturday: "Sam",
+        Sunday: "Dim"
+    };
+
+    let text = `${month.name}\n\n`;
 
     Object.keys(month.dates)
         .sort()
@@ -206,7 +216,23 @@ function monthText(month){
 
             const row = month.dates[dateKey];
 
-            text += `${row.pretty} — ${row["Studio image"]} / ${row["Studio son"]}\n`;
+            // extraction du jour déjà présent dans row.pretty (ex: "Mercredi 01/07")
+            const parts = row.pretty.split(" ");
+            const date = parts[1]; // "01/07"
+
+            const dayName = parts[0]; // "Mercredi"
+
+            const shortDay = {
+                "Lundi": "Lun",
+                "Mardi": "Mar",
+                "Mercredi": "Mer",
+                "Jeudi": "Jeu",
+                "Vendredi": "Ven",
+                "Samedi": "Sam",
+                "Dimanche": "Dim"
+            }[dayName] || dayName;
+
+            text += `${shortDay} ${date}\n`;
         });
 
     return text;
