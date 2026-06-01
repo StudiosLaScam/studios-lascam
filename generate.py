@@ -125,20 +125,20 @@ for studio_name, url in CALENDARS.items():
 
         if not slot:
             continue
-
+            
         month_key = start.strftime("%Y-%m")
 
-month_name = (
-    f"{MOIS[start.strftime('%B')]} "
-    f"{start.strftime('%Y')}"
-)
+        month_name = (
+            f"{MOIS[start.strftime('%B')]} "
+            f"{start.strftime('%Y')}"
+        )
 
         date_key = start.strftime("%Y-%m-%d")
 
-pretty_date = (
-    f"{JOURS[start.strftime('%A')]} "
-    f"{start.strftime('%d/%m')}"
-)
+        pretty_date = (
+            f"{JOURS[start.strftime('%A')]} "
+            f"{start.strftime('%d/%m')}"
+        )
 
         if month_key not in months_data:
 
