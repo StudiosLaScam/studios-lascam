@@ -102,11 +102,6 @@
   "2026-06": {
     "name": "Juin 2026",
     "dates": {
-      "2026-06-01": {
-        "pretty": "Lun 01/06",
-        "Studio image": "—",
-        "Studio son": "Matin"
-      },
       "2026-06-02": {
         "pretty": "Mar 02/06",
         "Studio image": "—",
@@ -114,6 +109,16 @@
       },
       "2026-06-03": {
         "pretty": "Mer 03/06",
+        "Studio image": "—",
+        "Studio son": "Matin"
+      },
+      "2026-06-04": {
+        "pretty": "Jeu 04/06",
+        "Studio image": "—",
+        "Studio son": "Après-midi"
+      },
+      "2026-06-05": {
+        "pretty": "Ven 05/06",
         "Studio image": "—",
         "Studio son": "Matin"
       },
@@ -130,7 +135,7 @@
       "2026-06-10": {
         "pretty": "Mer 10/06",
         "Studio image": "—",
-        "Studio son": "Matin + Après-midi"
+        "Studio son": "Après-midi"
       },
       "2026-06-11": {
         "pretty": "Jeu 11/06",
