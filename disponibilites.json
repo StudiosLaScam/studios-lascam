@@ -22,36 +22,6 @@
         "Studio image": "Après-midi",
         "Studio son": "Matin + Après-midi"
       },
-      "2026-07-17": {
-        "pretty": "Ven 17/07",
-        "Studio image": "Matin + Après-midi",
-        "Studio son": "Matin + Après-midi"
-      },
-      "2026-07-20": {
-        "pretty": "Lun 20/07",
-        "Studio image": "Matin + Après-midi",
-        "Studio son": "Matin + Après-midi"
-      },
-      "2026-07-21": {
-        "pretty": "Mar 21/07",
-        "Studio image": "Après-midi",
-        "Studio son": "Matin + Après-midi"
-      },
-      "2026-07-22": {
-        "pretty": "Mer 22/07",
-        "Studio image": "Matin + Après-midi",
-        "Studio son": "Matin + Après-midi"
-      },
-      "2026-07-23": {
-        "pretty": "Jeu 23/07",
-        "Studio image": "Matin + Après-midi",
-        "Studio son": "Matin + Après-midi"
-      },
-      "2026-07-24": {
-        "pretty": "Ven 24/07",
-        "Studio image": "Matin + Après-midi",
-        "Studio son": "Matin + Après-midi"
-      },
       "2026-07-27": {
         "pretty": "Lun 27/07",
         "Studio image": "Matin + Après-midi",
@@ -141,16 +111,6 @@
         "pretty": "Mer 10/06",
         "Studio image": "—",
         "Studio son": "Après-midi"
-      },
-      "2026-06-11": {
-        "pretty": "Jeu 11/06",
-        "Studio image": "—",
-        "Studio son": "Matin + Après-midi"
-      },
-      "2026-06-12": {
-        "pretty": "Ven 12/06",
-        "Studio image": "—",
-        "Studio son": "Matin"
       },
       "2026-06-16": {
         "pretty": "Mar 16/06",
