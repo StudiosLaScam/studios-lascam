@@ -1,4 +1,69 @@
 {
+  "2026-06": {
+    "name": "Juin 2026",
+    "dates": {
+      "2026-06-22": {
+        "pretty": "Lun 22/06",
+        "Studio image": "Matin + Après-midi",
+        "Studio son": "Après-midi"
+      },
+      "2026-06-05": {
+        "pretty": "Ven 05/06",
+        "Studio image": "—",
+        "Studio son": "Matin"
+      },
+      "2026-06-08": {
+        "pretty": "Lun 08/06",
+        "Studio image": "—",
+        "Studio son": "Après-midi"
+      },
+      "2026-06-09": {
+        "pretty": "Mar 09/06",
+        "Studio image": "—",
+        "Studio son": "Après-midi"
+      },
+      "2026-06-10": {
+        "pretty": "Mer 10/06",
+        "Studio image": "—",
+        "Studio son": "Après-midi"
+      },
+      "2026-06-16": {
+        "pretty": "Mar 16/06",
+        "Studio image": "—",
+        "Studio son": "Matin"
+      },
+      "2026-06-18": {
+        "pretty": "Jeu 18/06",
+        "Studio image": "—",
+        "Studio son": "Matin + Après-midi"
+      },
+      "2026-06-19": {
+        "pretty": "Ven 19/06",
+        "Studio image": "—",
+        "Studio son": "Matin"
+      },
+      "2026-06-23": {
+        "pretty": "Mar 23/06",
+        "Studio image": "—",
+        "Studio son": "Matin + Après-midi"
+      },
+      "2026-06-24": {
+        "pretty": "Mer 24/06",
+        "Studio image": "—",
+        "Studio son": "Matin"
+      },
+      "2026-06-25": {
+        "pretty": "Jeu 25/06",
+        "Studio image": "—",
+        "Studio son": "Matin + Après-midi"
+      },
+      "2026-06-26": {
+        "pretty": "Ven 26/06",
+        "Studio image": "—",
+        "Studio son": "Matin + Après-midi"
+      }
+    }
+  },
   "2026-07": {
     "name": "Juillet 2026",
     "dates": {
@@ -15,11 +80,6 @@
       "2026-07-15": {
         "pretty": "Mer 15/07",
         "Studio image": "Matin + Après-midi",
-        "Studio son": "Matin + Après-midi"
-      },
-      "2026-07-16": {
-        "pretty": "Jeu 16/07",
-        "Studio image": "Après-midi",
         "Studio son": "Matin + Après-midi"
       },
       "2026-07-27": {
@@ -66,6 +126,11 @@
         "pretty": "Mer 08/07",
         "Studio image": "—",
         "Studio son": "Matin + Après-midi"
+      },
+      "2026-07-16": {
+        "pretty": "Jeu 16/07",
+        "Studio image": "—",
+        "Studio son": "Matin + Après-midi"
       }
     }
   },
@@ -81,76 +146,11 @@
         "pretty": "Mar 04/08",
         "Studio image": "Matin + Après-midi",
         "Studio son": "—"
-      }
-    }
-  },
-  "2026-06": {
-    "name": "Juin 2026",
-    "dates": {
-      "2026-06-04": {
-        "pretty": "Jeu 04/06",
-        "Studio image": "—",
-        "Studio son": "Après-midi"
       },
-      "2026-06-05": {
-        "pretty": "Ven 05/06",
-        "Studio image": "—",
-        "Studio son": "Matin"
-      },
-      "2026-06-08": {
-        "pretty": "Lun 08/06",
-        "Studio image": "—",
-        "Studio son": "Après-midi"
-      },
-      "2026-06-09": {
-        "pretty": "Mar 09/06",
-        "Studio image": "—",
-        "Studio son": "Après-midi"
-      },
-      "2026-06-10": {
-        "pretty": "Mer 10/06",
-        "Studio image": "—",
-        "Studio son": "Après-midi"
-      },
-      "2026-06-16": {
-        "pretty": "Mar 16/06",
-        "Studio image": "—",
-        "Studio son": "Matin"
-      },
-      "2026-06-18": {
-        "pretty": "Jeu 18/06",
-        "Studio image": "—",
-        "Studio son": "Matin + Après-midi"
-      },
-      "2026-06-19": {
-        "pretty": "Ven 19/06",
-        "Studio image": "—",
-        "Studio son": "Matin"
-      },
-      "2026-06-22": {
-        "pretty": "Lun 22/06",
-        "Studio image": "—",
-        "Studio son": "Après-midi"
-      },
-      "2026-06-23": {
-        "pretty": "Mar 23/06",
-        "Studio image": "—",
-        "Studio son": "Matin + Après-midi"
-      },
-      "2026-06-24": {
-        "pretty": "Mer 24/06",
-        "Studio image": "—",
-        "Studio son": "Matin"
-      },
-      "2026-06-25": {
-        "pretty": "Jeu 25/06",
-        "Studio image": "—",
-        "Studio son": "Matin + Après-midi"
-      },
-      "2026-06-26": {
-        "pretty": "Ven 26/06",
-        "Studio image": "—",
-        "Studio son": "Matin + Après-midi"
+      "2026-08-05": {
+        "pretty": "Mer 05/08",
+        "Studio image": "Matin + Après-midi",
+        "Studio son": "—"
       }
     }
   }
