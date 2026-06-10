@@ -20,7 +20,7 @@
       "2026-06-18": {
         "pretty": "Jeu 18/06",
         "Studio image": "—",
-        "Studio son": "Matin + Après-midi"
+        "Studio son": "Matin"
       },
       "2026-06-19": {
         "pretty": "Ven 19/06",
@@ -52,11 +52,6 @@
   "2026-07": {
     "name": "Juillet 2026",
     "dates": {
-      "2026-07-09": {
-        "pretty": "Jeu 09/07",
-        "Studio image": "Matin",
-        "Studio son": "Matin + Après-midi"
-      },
       "2026-07-10": {
         "pretty": "Ven 10/07",
         "Studio image": "Matin",
@@ -104,6 +99,11 @@
       },
       "2026-07-08": {
         "pretty": "Mer 08/07",
+        "Studio image": "—",
+        "Studio son": "Matin + Après-midi"
+      },
+      "2026-07-09": {
+        "pretty": "Jeu 09/07",
         "Studio image": "—",
         "Studio son": "Matin + Après-midi"
       },
