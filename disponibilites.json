@@ -7,11 +7,6 @@
         "Studio image": "Après-midi",
         "Studio son": "Matin"
       },
-      "2026-06-23": {
-        "pretty": "Mar 23/06",
-        "Studio image": "—",
-        "Studio son": "Après-midi"
-      },
       "2026-06-25": {
         "pretty": "Jeu 25/06",
         "Studio image": "—",
@@ -159,6 +154,11 @@
       },
       "2026-08-19": {
         "pretty": "Mer 19/08",
+        "Studio image": "Matin",
+        "Studio son": "—"
+      },
+      "2026-08-24": {
+        "pretty": "Lun 24/08",
         "Studio image": "Matin",
         "Studio son": "—"
       },
