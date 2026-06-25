@@ -1,19 +1,4 @@
 {
-  "2026-06": {
-    "name": "Juin 2026",
-    "dates": {
-      "2026-06-24": {
-        "pretty": "Mer 24/06",
-        "Studio image": "Après-midi",
-        "Studio son": "Matin"
-      },
-      "2026-06-25": {
-        "pretty": "Jeu 25/06",
-        "Studio image": "—",
-        "Studio son": "Matin"
-      }
-    }
-  },
   "2026-07": {
     "name": "Juillet 2026",
     "dates": {
@@ -166,6 +151,16 @@
         "pretty": "Jeu 06/08",
         "Studio image": "—",
         "Studio son": "Matin + Après-midi"
+      }
+    }
+  },
+  "2026-06": {
+    "name": "Juin 2026",
+    "dates": {
+      "2026-06-25": {
+        "pretty": "Jeu 25/06",
+        "Studio image": "—",
+        "Studio son": "Matin"
       }
     }
   }
