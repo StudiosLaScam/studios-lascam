@@ -153,15 +153,5 @@
         "Studio son": "Matin + Après-midi"
       }
     }
-  },
-  "2026-06": {
-    "name": "Juin 2026",
-    "dates": {
-      "2026-06-25": {
-        "pretty": "Jeu 25/06",
-        "Studio image": "—",
-        "Studio son": "Matin"
-      }
-    }
   }
 }
