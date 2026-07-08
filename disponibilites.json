@@ -82,11 +82,6 @@
   "2026-08": {
     "name": "Août 2026",
     "dates": {
-      "2026-08-03": {
-        "pretty": "Lun 03/08",
-        "Studio image": "Matin + Après-midi",
-        "Studio son": "Matin + Après-midi"
-      },
       "2026-08-04": {
         "pretty": "Mar 04/08",
         "Studio image": "Matin",
@@ -126,6 +121,11 @@
         "pretty": "Lun 24/08",
         "Studio image": "Matin",
         "Studio son": "—"
+      },
+      "2026-08-03": {
+        "pretty": "Lun 03/08",
+        "Studio image": "—",
+        "Studio son": "Matin + Après-midi"
       },
       "2026-08-06": {
         "pretty": "Jeu 06/08",
