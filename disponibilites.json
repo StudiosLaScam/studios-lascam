@@ -4,13 +4,8 @@
     "dates": {
       "2026-07-21": {
         "pretty": "Mar 21/07",
-        "Studio image": "Matin + Après-midi",
+        "Studio image": "Matin",
         "Studio son": "Matin"
-      },
-      "2026-07-23": {
-        "pretty": "Jeu 23/07",
-        "Studio image": "Matin + Après-midi",
-        "Studio son": "Matin + Après-midi"
       },
       "2026-07-28": {
         "pretty": "Mar 28/07",
@@ -29,6 +24,11 @@
       },
       "2026-07-22": {
         "pretty": "Mer 22/07",
+        "Studio image": "—",
+        "Studio son": "Matin + Après-midi"
+      },
+      "2026-07-23": {
+        "pretty": "Jeu 23/07",
         "Studio image": "—",
         "Studio son": "Matin + Après-midi"
       },
