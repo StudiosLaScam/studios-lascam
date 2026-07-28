@@ -57,20 +57,25 @@
         "Studio image": "Matin",
         "Studio son": "Matin + Après-midi"
       },
-      "2026-08-12": {
-        "pretty": "Mer 12/08",
-        "Studio image": "Matin",
-        "Studio son": "Matin + Après-midi"
-      },
       "2026-08-19": {
         "pretty": "Mer 19/08",
         "Studio image": "Matin",
         "Studio son": "Matin"
       },
+      "2026-08-20": {
+        "pretty": "Jeu 20/08",
+        "Studio image": "Après-midi",
+        "Studio son": "—"
+      },
       "2026-08-24": {
         "pretty": "Lun 24/08",
         "Studio image": "Matin",
         "Studio son": "—"
+      },
+      "2026-08-12": {
+        "pretty": "Mer 12/08",
+        "Studio image": "—",
+        "Studio son": "Matin + Après-midi"
       }
     }
   }
