@@ -1,17 +1,27 @@
 {
+  "2026-09": {
+    "name": "Septembre 2026",
+    "dates": {
+      "2026-09-21": {
+        "pretty": "Lun 21/09",
+        "Studio image": "Matin",
+        "Studio son": "—"
+      }
+    }
+  },
+  "2026-10": {
+    "name": "Octobre 2026",
+    "dates": {
+      "2026-10-05": {
+        "pretty": "Lun 05/10",
+        "Studio image": "Après-midi",
+        "Studio son": "—"
+      }
+    }
+  },
   "2026-08": {
     "name": "Août 2026",
     "dates": {
-      "2026-08-19": {
-        "pretty": "Mer 19/08",
-        "Studio image": "Matin",
-        "Studio son": "Matin"
-      },
-      "2026-08-25": {
-        "pretty": "Mar 25/08",
-        "Studio image": "Matin",
-        "Studio son": "—"
-      },
       "2026-08-05": {
         "pretty": "Mer 05/08",
         "Studio image": "—",
@@ -26,16 +36,11 @@
         "pretty": "Mer 12/08",
         "Studio image": "—",
         "Studio son": "Matin + Après-midi"
-      }
-    }
-  },
-  "2026-10": {
-    "name": "Octobre 2026",
-    "dates": {
-      "2026-10-05": {
-        "pretty": "Lun 05/10",
-        "Studio image": "Après-midi",
-        "Studio son": "—"
+      },
+      "2026-08-19": {
+        "pretty": "Mer 19/08",
+        "Studio image": "—",
+        "Studio son": "Matin"
       }
     }
   }
