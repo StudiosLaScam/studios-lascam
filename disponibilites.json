@@ -2,9 +2,14 @@
   "2026-11": {
     "name": "Novembre 2026",
     "dates": {
-      "2026-11-02": {
-        "pretty": "Lun 02/11",
-        "Studio image": "Matin + Après-midi",
+      "2026-11-03": {
+        "pretty": "Mar 03/11",
+        "Studio image": "Après-midi",
+        "Studio son": "—"
+      },
+      "2026-11-04": {
+        "pretty": "Mer 04/11",
+        "Studio image": "Matin",
         "Studio son": "—"
       }
     }
