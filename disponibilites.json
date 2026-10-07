@@ -4,7 +4,12 @@
     "dates": {
       "2026-11-25": {
         "pretty": "Mer 25/11",
-        "Studio image": "Matin + Après-midi",
+        "Studio image": "Matin",
+        "Studio son": "—"
+      },
+      "2026-11-26": {
+        "pretty": "Jeu 26/11",
+        "Studio image": "Après-midi",
         "Studio son": "—"
       }
     }
