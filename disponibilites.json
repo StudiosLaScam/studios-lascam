@@ -1,15 +1,35 @@
 {
+  "2026-10": {
+    "name": "Octobre 2026",
+    "dates": {
+      "2026-10-26": {
+        "pretty": "Lun 26/10",
+        "Studio image": "Matin + Après-midi",
+        "Studio son": "—"
+      }
+    }
+  },
   "2026-11": {
     "name": "Novembre 2026",
     "dates": {
-      "2026-11-25": {
-        "pretty": "Mer 25/11",
-        "Studio image": "Matin",
+      "2026-11-09": {
+        "pretty": "Lun 09/11",
+        "Studio image": "Matin + Après-midi",
+        "Studio son": "—"
+      },
+      "2026-11-10": {
+        "pretty": "Mar 10/11",
+        "Studio image": "Matin + Après-midi",
         "Studio son": "—"
       },
       "2026-11-26": {
         "pretty": "Jeu 26/11",
         "Studio image": "Après-midi",
+        "Studio son": "—"
+      },
+      "2026-11-27": {
+        "pretty": "Ven 27/11",
+        "Studio image": "Matin",
         "Studio son": "—"
       }
     }
