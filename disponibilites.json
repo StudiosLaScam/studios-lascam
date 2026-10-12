@@ -4,7 +4,7 @@
     "dates": {
       "2026-10-26": {
         "pretty": "Lun 26/10",
-        "Studio image": "Matin + Après-midi",
+        "Studio image": "Après-midi",
         "Studio son": "—"
       }
     }
@@ -14,12 +14,12 @@
     "dates": {
       "2026-11-09": {
         "pretty": "Lun 09/11",
-        "Studio image": "Matin + Après-midi",
+        "Studio image": "Matin",
         "Studio son": "—"
       },
       "2026-11-10": {
         "pretty": "Mar 10/11",
-        "Studio image": "Matin + Après-midi",
+        "Studio image": "Matin",
         "Studio son": "—"
       },
       "2026-11-26": {
@@ -29,7 +29,7 @@
       },
       "2026-11-27": {
         "pretty": "Ven 27/11",
-        "Studio image": "Matin",
+        "Studio image": "Matin + Après-midi",
         "Studio son": "—"
       }
     }
