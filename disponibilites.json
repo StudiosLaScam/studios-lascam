@@ -12,11 +12,6 @@
   "2026-11": {
     "name": "Novembre 2026",
     "dates": {
-      "2026-11-09": {
-        "pretty": "Lun 09/11",
-        "Studio image": "Matin",
-        "Studio son": "—"
-      },
       "2026-11-10": {
         "pretty": "Mar 10/11",
         "Studio image": "Matin",
@@ -31,11 +26,6 @@
         "pretty": "Ven 27/11",
         "Studio image": "Matin",
         "Studio son": "—"
-      },
-      "2026-11-05": {
-        "pretty": "Jeu 05/11",
-        "Studio image": "—",
-        "Studio son": "Matin"
       }
     }
   },
