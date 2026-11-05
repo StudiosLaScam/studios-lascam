@@ -22,10 +22,30 @@
         "Studio image": "Après-midi",
         "Studio son": "—"
       },
+      "2026-12-28": {
+        "pretty": "Lun 28/12",
+        "Studio image": "Après-midi",
+        "Studio son": "—"
+      },
       "2026-12-30": {
         "pretty": "Mer 30/12",
         "Studio image": "Après-midi",
         "Studio son": "—"
+      }
+    }
+  },
+  "2027-01": {
+    "name": "Janvier 2027",
+    "dates": {
+      "2027-01-04": {
+        "pretty": "Lun 04/01",
+        "Studio image": "Matin",
+        "Studio son": "Matin + Après-midi"
+      },
+      "2027-01-05": {
+        "pretty": "Mar 05/01",
+        "Studio image": "—",
+        "Studio son": "Matin + Après-midi"
       }
     }
   }
